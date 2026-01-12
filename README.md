@@ -84,16 +84,28 @@ Strivo
 ## 🖼️ Screenshots
 
 ### Login Screen
-![Login Screen](screenshots/login_screen.png)
+![Login Screen](/Login.png)
 
-### Home Dashboard
-![Home Dashboard](screenshots/home_dashboard.png)
+### HOD Dashboard
+![HOD Dashboard](HODDashboard.png)
 
-### Meeting Management
-![Meeting Management](screenshots/meeting_management.png)
+### Faculty Dashboard
+![Faculty Dashboard](FacultyDashboard.png)
 
-### Event Management
-![Event Management](screenshots/event_management.png)
+### Faculty Screen
+![Faculty Screen](Faculty.png)
+
+### Student Screen
+![Student Screen](Students.png)
+
+### Schedule Meeting Screen
+![Schedule Meeting Screen](ScheduleMeeting.png)
+
+### Room Availability Screen
+![Room Availability Screen](Availability.png)
+
+### Add Event Screen
+![Add Event Screen](AddEvent.png)
 
 ---
 
