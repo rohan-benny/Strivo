@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Strivo" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Strivo" parent="Base.Theme.Strivo" />
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@android:color/transparent</item>
+    </style>
+    <style name="AppDatePickerDialog" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <!-- Customize the color of the header -->
+        <item name="colorPrimary">#19384D</item>
+        <!-- Customize the color of the selected date background -->
+        <item name="colorPrimaryVariant">#E6D011</item>
+    </style>
+    <style name="UserDialog" parent="Theme.Material3.Dark.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">#19384D</item>
+        <item name="materialButtonStyle">@color/black</item>
+        <item name="colorAccent">#E6D011</item>
+        <item name="colorPrimary">#E6D011</item>
+    </style>
+</resources>

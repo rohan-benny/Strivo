@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_36sdp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/_4sdp"
+    android:gravity="center_vertical">
+
+    <!-- Vertical color strip -->
+    <View
+        android:id="@+id/colorStrip"
+        android:layout_width="6dp"
+        android:layout_height="match_parent"
+        android:background="#A5D6A7" /> <!-- Green for Holiday -->
+
+    <!-- Event text layout -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_8sdp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/eventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07"
+            android:textColor="#19384D"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/sorasemibold"
+            android:layout_marginEnd="@dimen/_4sdp" />
+
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Holiday"
+            android:textColor="#19384D"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/soraregular" />
+    </LinearLayout>
+</LinearLayout>

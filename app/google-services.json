@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "648659980786",
+    "firebase_url": "https://strivo-a162b-default-rtdb.firebaseio.com",
+    "project_id": "strivo-a162b",
+    "storage_bucket": "strivo-a162b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648659980786:android:36ba970fc50692ee8d5b6b",
+        "android_client_info": {
+          "package_name": "com.example.my_first_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEyzCe4hIGbHWpvig3kGfD7a5NYPvY1w0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648659980786:android:caf0142a250f55c48d5b6b",
+        "android_client_info": {
+          "package_name": "com.example.strivo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEyzCe4hIGbHWpvig3kGfD7a5NYPvY1w0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

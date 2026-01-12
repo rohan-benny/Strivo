@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_270sdp"
+    android:layout_height="290dp"
+    android:background="@drawable/logoutbg">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_26sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/sorasemibold"
+        android:text="Log Out"
+        android:textColor="@color/mainclr"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:fontFamily="@font/soraregular"
+        android:text="Are You Sure\nYou want to Log Out ?"
+        android:textColor="@color/mainclr"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logoutbtn1"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:text="Log Out"
+        android:fontFamily="@font/sorasemibold"
+        android:background="@drawable/logoutbtnbg"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cancelbtn2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cancelbtn2"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:text="Cancel"
+        android:fontFamily="@font/sorasemibold"
+        android:textSize="@dimen/_12ssp"
+        android:textAllCaps="false"
+        android:background="@drawable/cancelbtnbg"
+        android:textColor="#A40000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/logoutbtn1"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+</androidx.constraintlayout.widget.ConstraintLayout>

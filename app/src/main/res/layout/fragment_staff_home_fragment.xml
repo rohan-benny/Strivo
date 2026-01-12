@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grbg"
+    tools:context=".staff_home_fragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout10"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_94sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/proconst1"
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:background="@drawable/propicbg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardv123"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                app:cardCornerRadius="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/facpropic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/face2" />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/staffname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/sorasemibold"
+            android:text="David Mathew"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toEndOf="@+id/proconst1"
+            app:layout_constraintTop_toTopOf="@+id/proconst1" />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:fontFamily="@font/soraregular"
+            android:text="Faculty, Computer Science"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/proconst1"
+            app:layout_constraintStart_toStartOf="@+id/staffname" />
+
+        <ImageView
+            android:id="@+id/staffnotifyicon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:src="@drawable/notifyicon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout11"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/homerectbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout10">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:fontFamily="@font/sorasemibold"
+            android:text="Monday, 2025"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:fontFamily="@font/soraregular"
+            android:text="NIS"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@+id/date"
+            app:layout_constraintTop_toBottomOf="@+id/date" />
+
+        <TextView
+            android:id="@+id/rclass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/soraregular"
+            android:text="II MCA B"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@+id/sub"
+            app:layout_constraintTop_toBottomOf="@+id/sub" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_18sdp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/soraregular"
+            android:text="9:00 am"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/sub"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/soraregular"
+            android:text="206"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@+id/time"
+            app:layout_constraintTop_toBottomOf="@+id/time" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout11"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout11"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout11">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/smeetbtn"
+            android:layout_width="@dimen/_134sdp"
+            android:layout_height="@dimen/_86sdp"
+            android:background="@drawable/whbtnbg"
+            android:drawableRight="@drawable/mymeeticon"
+            android:fontFamily="@font/soraregular"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="My\nMeetings"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/mainclr"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stimetablebtn"
+            android:layout_width="@dimen/_134sdp"
+            android:layout_height="@dimen/_86sdp"
+            android:background="@drawable/whbtnbg"
+            android:drawableRight="@drawable/mytimetableicon"
+            android:fontFamily="@font/soraregular"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="My\nTimeTable"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/mainclr"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stfschedulebtn"
+            android:layout_width="@dimen/_134sdp"
+            android:layout_height="@dimen/_86sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/whbtnbg"
+            android:drawableRight="@drawable/stfschedmeeticon"
+            android:fontFamily="@font/soraregular"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="Schedule\nMeeting"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/mainclr"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/smeetbtn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stfmanagebtn"
+            android:layout_width="@dimen/_134sdp"
+            android:layout_height="@dimen/_86sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/whbtnbg"
+            android:drawableRight="@drawable/stfmanage"
+            android:fontFamily="@font/soraregular"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="Manage\nEvents"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/mainclr"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stimetablebtn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stfviewcircbtn"
+            android:layout_width="@dimen/_134sdp"
+            android:layout_height="@dimen/_86sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/whbtnbg"
+            android:drawableRight="@drawable/stfcirc"
+            android:fontFamily="@font/soraregular"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="View\nCircular"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/mainclr"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stfschedulebtn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stfroomview"
+            android:layout_width="@dimen/_134sdp"
+            android:layout_height="@dimen/_86sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/whbtnbg"
+            android:drawableRight="@drawable/stfroom"
+            android:fontFamily="@font/soraregular"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="Room\nViewer"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/mainclr"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stfmanagebtn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stfquerybtn"
+            android:layout_width="@dimen/_134sdp"
+            android:layout_height="@dimen/_86sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/whbtnbg"
+            android:drawableRight="@drawable/queryicon"
+            android:fontFamily="@font/soraregular"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="Handle\nRequests"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/mainclr"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stfviewcircbtn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stfcalendarbtn"
+            android:layout_width="@dimen/_134sdp"
+            android:layout_height="@dimen/_86sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/whbtnbg"
+            android:drawableRight="@drawable/calendaricon"
+            android:fontFamily="@font/soraregular"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="Dept.\nCalendar"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/mainclr"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stfroomview" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

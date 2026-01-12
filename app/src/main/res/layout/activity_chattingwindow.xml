@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#F0F0F0"
+    tools:context=".chattingwindow">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constlayout103"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_94sdp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/chatwindowback"
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/_46sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bckarrow" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout14"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/propicbg"
+            app:layout_constraintBottom_toBottomOf="@+id/chatwindowback"
+            app:layout_constraintStart_toEndOf="@+id/chatwindowback"
+            app:layout_constraintTop_toTopOf="@+id/chatwindowback">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/chatwindowproimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/face2" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/chatwindowname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/sorasemibold"
+            android:text="Rohan Benny"
+            android:textColor="#19384D"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintBottom_toTopOf="@+id/chatwindowemail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout14"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout14" />
+
+        <TextView
+            android:id="@+id/chatwindowemail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="rohan99@gmail.com"
+            android:fontFamily="@font/soraregular"
+            android:textColor="#19384D"
+            android:textSize="@dimen/_10ssp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/chatwindowname" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatwindowrecycler"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constlayout103" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:ems="10"
+        android:padding="18dp"
+        android:inputType="text"
+        android:background="@drawable/chatbox"
+        android:elevation="4dp"
+        android:fontFamily="@font/soraregular"
+        android:textColorHint="#6A6A6A"
+        android:textColor="#19384D"
+        android:textSize="@dimen/_12ssp"
+        android:hint="Message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/chatwindowrecycler" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_38sdp"
+        android:layout_height="@dimen/_38sdp"
+        android:elevation="2dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginLeft="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/chatwindowrecycler"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextMultiLine"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextMultiLine">
+
+        <ImageView
+            android:id="@+id/sndbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/sentbutton" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

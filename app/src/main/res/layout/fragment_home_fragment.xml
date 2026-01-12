@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grbg"
+    tools:context=".home_fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_94sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/proconst"
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:background="@drawable/propicbg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardv12"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                app:cardCornerRadius="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/showpropic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/prpc" />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/hdname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/sorasemibold"
+            android:text="Rohan Benny"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toEndOf="@+id/proconst"
+            app:layout_constraintTop_toTopOf="@+id/proconst" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:fontFamily="@font/soraregular"
+            android:text="HOD, Computer Science"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/proconst"
+            app:layout_constraintStart_toStartOf="@+id/hdname" />
+
+        <ImageView
+            android:id="@+id/notificon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:src="@drawable/notifyicon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/homerectbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/rectdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:fontFamily="@font/sorasemibold"
+            android:text="Monday, 2025"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rectsub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:fontFamily="@font/soraregular"
+            android:text="NIS"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@+id/rectdate"
+            app:layout_constraintTop_toBottomOf="@+id/rectdate" />
+
+        <TextView
+            android:id="@+id/rectclass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/soraregular"
+            android:text="II MCA B"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@+id/rectsub"
+            app:layout_constraintTop_toBottomOf="@+id/rectsub" />
+
+        <TextView
+            android:id="@+id/rectime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_18sdp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/soraregular"
+            android:text="9:00 am"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/rectsub"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/rectroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/soraregular"
+            android:text="206"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@+id/rectime"
+            app:layout_constraintTop_toBottomOf="@+id/rectime" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/upcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upcoming"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/soraregular"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/homebtns"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_46sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upcoming">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/eventbtn"
+            android:layout_width="@dimen/_88sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/homebtnbg"
+            android:drawableLeft="@drawable/eventicon"
+            android:drawablePadding="-8dp"
+            android:fontFamily="@font/soraregular"
+            android:paddingLeft="@dimen/_12sdp"
+            android:text="Events"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bulletinbtn"
+            android:layout_width="@dimen/_88sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/homebtnbg"
+            android:drawableLeft="@drawable/bulletinicon"
+            android:drawablePadding="-8dp"
+            android:fontFamily="@font/soraregular"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Circulars"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/eventbtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button3"
+            android:layout_width="@dimen/_88sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/homebtnbg"
+            android:fontFamily="@font/soraregular"
+            android:text="Rooms"
+            android:drawableLeft="@drawable/rooms"
+            android:drawablePadding="-8dp"
+            android:textAllCaps="false"
+            android:paddingLeft="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bulletinbtn"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/homemainbtncontainer"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="402dp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homebtns">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/meetbtn"
+            android:layout_width="@dimen/_134sdp"
+            android:layout_height="@dimen/_86sdp"
+            android:background="@drawable/whbtnbg"
+            android:drawableRight="@drawable/mymeeticon"
+            android:fontFamily="@font/soraregular"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="My\nMeetings"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/mainclr"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/timetablebtn"
+            android:layout_width="@dimen/_134sdp"
+            android:layout_height="@dimen/_86sdp"
+            android:background="@drawable/whbtnbg"
+            android:drawableRight="@drawable/mytimetableicon"
+            android:fontFamily="@font/soraregular"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="My\nTimeTable"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/mainclr"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/schedulebtn"
+            android:layout_width="@dimen/_134sdp"
+            android:layout_height="@dimen/_86sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/whbtnbg"
+            android:drawableRight="@drawable/schedmeeticon"
+            android:fontFamily="@font/soraregular"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="Schedule\nMeeting"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/mainclr"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meetbtn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button7"
+            android:layout_width="@dimen/_134sdp"
+            android:layout_height="@dimen/_86sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/whbtnbg"
+            android:drawableRight="@drawable/circular"
+            android:fontFamily="@font/soraregular"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="Issue\nCircular"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/mainclr"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timetablebtn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/querybtn"
+            android:layout_width="@dimen/_134sdp"
+            android:layout_height="@dimen/_86sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/whbtnbg"
+            android:drawableRight="@drawable/queryicon"
+            android:fontFamily="@font/soraregular"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="Handle\nRequests"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/mainclr"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/schedulebtn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/calendarbtn"
+            android:layout_width="@dimen/_134sdp"
+            android:layout_height="@dimen/_86sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/whbtnbg"
+            android:drawableRight="@drawable/calendaricon"
+            android:fontFamily="@font/soraregular"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="Dept.\nCalendar"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/mainclr"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button7" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

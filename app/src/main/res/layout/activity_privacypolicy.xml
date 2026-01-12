@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".privacypolicy">
+
+    <ImageView
+        android:id="@+id/privacybackarrow"
+        android:layout_width="@dimen/_14sdp"
+        android:layout_height="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_46sdp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bckarrow" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:fontFamily="@font/soraregular"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/privacybackarrow"
+        app:layout_constraintStart_toEndOf="@+id/privacybackarrow"
+        app:layout_constraintTop_toTopOf="@+id/privacybackarrow" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16sdp">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:fontFamily="@font/soraregular"
+                    android:justificationMode="inter_word"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="The Strivo App values your privacy. This policy explains how we collect, use, and protect your data. By using the app, you agree to this policy."
+                    android:textColor="#19384D"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Information We Collect"
+                    android:fontFamily="@font/sorasemibold"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#19384D"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:fontFamily="@font/soraregular"
+                    android:justificationMode="inter_word"
+                    android:textColor="#19384D"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="We collect personal details such as names, emails, phone numbers, and department roles. We also gather app usage data, including interactions, timestamps, and device details, to improve functionality and user experience."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sorasemibold"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#19384D"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="How We Use Your Information"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:fontFamily="@font/soraregular"
+                    android:justificationMode="inter_word"
+                    android:textColor="#19384D"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="Your data is used to manage department operations, and facilitate communication, schedule meetings, send notifications, and enhance app performance."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sorasemibold"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#19384D"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Data Sharing &amp; Security"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:fontFamily="@font/soraregular"
+                    android:justificationMode="inter_word"
+                    android:text="We do not sell your data. Limited sharing occurs within the department and with Firebase services for secure authentication and real-time updates. We implement encryption and access controls to protect your information."
+                    android:textColor="#19384D"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sorasemibold"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#19384D"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="User Rights"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:fontFamily="@font/soraregular"
+                    android:justificationMode="inter_word"
+                    android:textColor="#19384D"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="Users can access, update, or request deletion of their data. Push notifications can be managed through device settings."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sorasemibold"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#19384D"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Updates &amp; Contact"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:fontFamily="@font/soraregular"
+                    android:justificationMode="inter_word"
+                    android:textColor="#19384D"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="We may update this policy periodically. For queries, contact us at:\nEmail: strivo@gmail.com"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

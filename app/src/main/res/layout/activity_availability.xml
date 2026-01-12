@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".Availability">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout17"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_94sdp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/availablebackbtn"
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/_46sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bckarrow" />
+
+        <TextView
+            android:id="@+id/textView99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:fontFamily="@font/soraregular"
+            android:text="Rooms"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/availablebackbtn"
+            app:layout_constraintStart_toEndOf="@+id/availablebackbtn"
+            app:layout_constraintTop_toTopOf="@+id/availablebackbtn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:elevation="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout17">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView102"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/sorasemibold"
+                android:text="Room Name :"
+                android:textColor="@color/mainclr"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView103"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/sorasemibold"
+                android:text="Category :"
+                android:textColor="@color/mainclr"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintStart_toStartOf="@+id/textView102"
+                app:layout_constraintTop_toBottomOf="@+id/textView102" />
+
+            <TextView
+                android:id="@+id/textView104"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="@font/sorasemibold"
+                android:text="Capacity :"
+                android:textColor="@color/mainclr"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView103"
+                app:layout_constraintTop_toBottomOf="@+id/textView103" />
+
+            <TextView
+                android:id="@+id/avroomname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:fontFamily="@font/soralight"
+                android:text="SKE"
+                android:textColor="@color/mainclr"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView102"
+                app:layout_constraintStart_toEndOf="@+id/textView102"
+                app:layout_constraintTop_toTopOf="@+id/textView102" />
+
+            <TextView
+                android:id="@+id/avroomcat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/soralight"
+                android:text="Auditorium"
+                android:textColor="@color/mainclr"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView103"
+                app:layout_constraintStart_toEndOf="@+id/textView103"
+                app:layout_constraintTop_toTopOf="@+id/textView103" />
+
+            <TextView
+                android:id="@+id/avroomcapacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:fontFamily="@font/soralight"
+                android:text="500"
+                android:textColor="@color/mainclr"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView104"
+                app:layout_constraintStart_toEndOf="@+id/textView104"
+                app:layout_constraintTop_toTopOf="@+id/textView104" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:elevation="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="@id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@id/cardView3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView108"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:fontFamily="@font/sorasemibold"
+                android:text="Availability Status"
+                android:textColor="@color/mainclr"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_13sdp"
+                android:elevation="@dimen/_4sdp"
+                app:cardBackgroundColor="#006F04"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView108"
+                app:layout_constraintTop_toBottomOf="@id/textView108" />
+
+            <TextView
+                android:id="@+id/textView109"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/soralight"
+                android:text="Available"
+                android:textColor="@color/mainclr"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView4"
+                app:layout_constraintStart_toEndOf="@+id/cardView4"
+                app:layout_constraintTop_toTopOf="@+id/cardView4" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView7"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:elevation="@dimen/_4sdp"
+                app:cardBackgroundColor="#AB0000"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView109"
+                app:layout_constraintStart_toEndOf="@+id/textView109"
+                app:layout_constraintTop_toTopOf="@+id/textView109" />
+
+            <TextView
+                android:id="@+id/textView110"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/soralight"
+                android:text="Occupied"
+                android:textColor="@color/mainclr"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView7"
+                app:layout_constraintStart_toEndOf="@+id/cardView7"
+                app:layout_constraintTop_toTopOf="@+id/cardView7" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView8"
+        app:layout_constraintStart_toStartOf="@+id/cardView8"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/sorasemibold"
+                android:text="Check Availability"
+                android:textColor="@color/mainclr"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/avtextbox"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:focusable="false"
+                android:fontFamily="@font/soraregular"
+                android:hint="Select Date"
+                android:inputType="none"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textColor="@color/mainclr"
+                android:textColorHint="#4B4B4B"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@+id/textView111"
+                app:layout_constraintTop_toBottomOf="@+id/textView111" />
+
+            <ImageView
+                android:id="@+id/avdatepick"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_6sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextText"
+                app:layout_constraintEnd_toEndOf="@+id/editTextText"
+                app:layout_constraintTop_toTopOf="@+id/editTextText"
+                app:srcCompat="@drawable/datepicker" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/avsearchbtn"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:background="@drawable/avserchbtn"
+                android:fontFamily="@font/sorasemibold"
+                android:text="Search"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextText"
+                app:layout_constraintStart_toEndOf="@+id/editTextText"
+                app:layout_constraintTop_toTopOf="@+id/editTextText" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/timeSlotsContainer"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextText">
+
+                <TextView
+                    android:id="@+id/textView112"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sorasemibold"
+                    android:text="Timings"
+                    android:textColor="@color/mainclr"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView113"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:fontFamily="@font/soralight"
+                    android:text="24 May 2025 Saturday"
+                    android:textColor="@color/mainclr"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintStart_toStartOf="@+id/textView112"
+                    app:layout_constraintTop_toBottomOf="@+id/textView112" />
+
+                <View
+                    android:id="@+id/view18"
+                    android:layout_width="0dp"
+                    android:layout_height="0.6dp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/mainclr"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView113" />
+
+                <TextView
+                    android:id="@+id/avfirsthr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/sorasemibold"
+                    android:text="9:00-9:50 AM"
+                    android:textColor="@color/mainclr"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintStart_toStartOf="@+id/view18"
+                    app:layout_constraintTop_toBottomOf="@+id/view18" />
+
+                <TextView
+                    android:id="@+id/avsecondhr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:fontFamily="@font/sorasemibold"
+                    android:text="10:00-10:50 AM"
+                    android:textColor="@color/mainclr"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintStart_toStartOf="@+id/avfirsthr"
+                    app:layout_constraintTop_toBottomOf="@+id/avfirsthr" />
+
+                <TextView
+                    android:id="@+id/avthirdhr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:fontFamily="@font/sorasemibold"
+                    android:text="11:00-11:50 AM"
+                    android:textColor="@color/mainclr"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintStart_toStartOf="@+id/avsecondhr"
+                    app:layout_constraintTop_toBottomOf="@+id/avsecondhr" />
+
+                <TextView
+                    android:id="@+id/avfourthhr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:fontFamily="@font/sorasemibold"
+                    android:text="12:00-12:50 PM"
+                    android:textColor="@color/mainclr"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintStart_toStartOf="@+id/avthirdhr"
+                    app:layout_constraintTop_toBottomOf="@+id/avthirdhr" />
+
+                <TextView
+                    android:id="@+id/avfifthhr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:fontFamily="@font/sorasemibold"
+                    android:text="1:40-2:30 PM"
+                    android:textColor="@color/mainclr"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintStart_toStartOf="@+id/avfourthhr"
+                    app:layout_constraintTop_toBottomOf="@+id/avfourthhr" />
+
+                <TextView
+                    android:id="@+id/avsixthhr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:fontFamily="@font/sorasemibold"
+                    android:text="2:40-3:30 PM"
+                    android:textColor="@color/mainclr"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintStart_toStartOf="@+id/avfifthhr"
+                    app:layout_constraintTop_toBottomOf="@+id/avfifthhr" />
+
+                <TextView
+                    android:id="@+id/avseventhhr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginBottom="@dimen/_60sdp"
+                    android:fontFamily="@font/sorasemibold"
+                    android:text="3:40-4:30 PM"
+                    android:textColor="@color/mainclr"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/avsixthhr"
+                    app:layout_constraintTop_toBottomOf="@+id/avsixthhr" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/avfirstbtn"
+                    android:layout_width="@dimen/_44sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_marginRight="@dimen/_90sdp"
+                    android:background="@drawable/greenavbtn"
+                    android:fontFamily="@font/sorasemibold"
+                    android:text="A"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/avfirsthr"
+                    app:layout_constraintEnd_toEndOf="@+id/view18"
+                    app:layout_constraintTop_toTopOf="@+id/avfirsthr" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/avsecondbtn"
+                    android:layout_width="@dimen/_44sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:background="@drawable/greenavbtn"
+                    android:fontFamily="@font/sorasemibold"
+                    android:text="A"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/avsecondhr"
+                    app:layout_constraintEnd_toEndOf="@+id/avfirstbtn"
+                    app:layout_constraintTop_toTopOf="@+id/avsecondhr" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/avthirdbtn"
+                    android:layout_width="@dimen/_44sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:background="@drawable/greenavbtn"
+                    android:fontFamily="@font/sorasemibold"
+                    android:text="A"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/avthirdhr"
+                    app:layout_constraintEnd_toEndOf="@+id/avsecondbtn"
+                    app:layout_constraintTop_toTopOf="@+id/avthirdhr" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/avfourthbtn"
+                    android:layout_width="@dimen/_44sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:background="@drawable/greenavbtn"
+                    android:fontFamily="@font/sorasemibold"
+                    android:text="A"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/avfourthhr"
+                    app:layout_constraintEnd_toEndOf="@+id/avthirdbtn"
+                    app:layout_constraintTop_toTopOf="@+id/avfourthhr" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/avfifthbtn"
+                    android:layout_width="@dimen/_44sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:background="@drawable/greenavbtn"
+                    android:fontFamily="@font/sorasemibold"
+                    android:text="A"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/avfifthhr"
+                    app:layout_constraintEnd_toEndOf="@+id/avfourthbtn"
+                    app:layout_constraintTop_toTopOf="@+id/avfifthhr" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/avsixthbtn"
+                    android:layout_width="@dimen/_44sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:background="@drawable/greenavbtn"
+                    android:fontFamily="@font/sorasemibold"
+                    android:text="A"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/avsixthhr"
+                    app:layout_constraintEnd_toEndOf="@+id/avfifthbtn"
+                    app:layout_constraintTop_toTopOf="@+id/avsixthhr" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/avseventhbtn"
+                    android:layout_width="@dimen/_44sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:background="@drawable/greenavbtn"
+                    android:fontFamily="@font/sorasemibold"
+                    android:text="A"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/avseventhhr"
+                    app:layout_constraintEnd_toEndOf="@+id/avsixthbtn"
+                    app:layout_constraintTop_toTopOf="@+id/avseventhhr" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

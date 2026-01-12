@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Add_event">
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="@dimen/_14sdp"
+        android:layout_height="@dimen/_14sdp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/_46sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bckarrow" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:fontFamily="@font/soraregular"
+        android:text="Add Event"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView35"
+        app:layout_constraintStart_toEndOf="@+id/imageView35"
+        app:layout_constraintTop_toTopOf="@+id/imageView35" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView58"
+        app:srcCompat="@drawable/image2" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView36">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16sdp">
+
+                <EditText
+                    android:id="@+id/faccod"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@android:color/transparent"
+                    android:drawableBottom="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+                <TextView
+                    android:id="@+id/textView59"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/soraregular"
+                    android:text="Title"
+                    android:textColor="#19384D"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/eventitle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@android:color/transparent"
+                    android:drawableBottom="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/textView59"
+                    app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+                <View
+                    android:id="@+id/view8"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#19384D"
+                    app:layout_constraintBottom_toBottomOf="@+id/eventitle"
+                    app:layout_constraintEnd_toEndOf="@+id/eventitle"
+                    app:layout_constraintStart_toStartOf="@+id/eventitle" />
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/soraregular"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="Start Date"
+                    android:textColor="#19384D"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="@+id/view8"
+                    app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+                <TextView
+                    android:id="@+id/textView61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:fontFamily="@font/soraregular"
+                    android:text="End Date"
+                    android:textColor="#19384D"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+                <EditText
+                    android:id="@+id/startdate"
+                    android:layout_width="@dimen/_126sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@android:color/transparent"
+                    android:drawableBottom="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintStart_toStartOf="@+id/textView60"
+                    app:layout_constraintTop_toBottomOf="@+id/textView60" />
+
+                <View
+                    android:id="@+id/view9"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#19384D"
+                    app:layout_constraintBottom_toBottomOf="@+id/startdate"
+                    app:layout_constraintEnd_toEndOf="@+id/startdate"
+                    app:layout_constraintStart_toStartOf="@+id/startdate" />
+
+                <EditText
+                    android:id="@+id/enddate"
+                    android:layout_width="@dimen/_126sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@android:color/transparent"
+                    android:drawableBottom="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView61"
+                    app:layout_constraintTop_toBottomOf="@+id/textView61" />
+
+                <View
+                    android:id="@+id/view10"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#19384D"
+                    app:layout_constraintBottom_toBottomOf="@+id/enddate"
+                    app:layout_constraintEnd_toEndOf="@+id/enddate"
+                    app:layout_constraintStart_toStartOf="@+id/enddate" />
+
+                <ImageView
+                    android:id="@+id/strtdatepick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/startdate"
+                    app:layout_constraintEnd_toEndOf="@+id/startdate"
+                    app:layout_constraintTop_toTopOf="@+id/startdate"
+                    app:srcCompat="@drawable/datepicker" />
+
+                <ImageView
+                    android:id="@+id/endatepick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/enddate"
+                    app:layout_constraintEnd_toEndOf="@+id/enddate"
+                    app:layout_constraintTop_toTopOf="@+id/enddate"
+                    app:srcCompat="@drawable/datepicker" />
+
+                <TextView
+                    android:id="@+id/textView62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/soraregular"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="Time"
+                    android:textColor="#19384D"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+                <EditText
+                    android:id="@+id/eventime"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@android:color/transparent"
+                    android:drawableBottom="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView62" />
+
+                <View
+                    android:id="@+id/view11"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#19384D"
+                    app:layout_constraintBottom_toBottomOf="@+id/eventime"
+                    app:layout_constraintEnd_toEndOf="@+id/eventime"
+                    app:layout_constraintStart_toStartOf="@+id/eventime" />
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/soraregular"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="Venue"
+                    android:textColor="#19384D"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="@+id/view11"
+                    app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+                <EditText
+                    android:id="@+id/venue"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@android:color/transparent"
+                    android:drawableBottom="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView63" />
+
+                <View
+                    android:id="@+id/view12"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#19384D"
+                    app:layout_constraintBottom_toBottomOf="@+id/venue"
+                    app:layout_constraintEnd_toEndOf="@+id/venue"
+                    app:layout_constraintStart_toStartOf="@+id/venue" />
+
+                <View
+                    android:id="@+id/view13"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#19384D"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/faccod" />
+
+                <TextView
+                    android:id="@+id/textView64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/soraregular"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="Faculty Coordinator"
+                    android:textColor="#19384D"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="@+id/view12"
+                    app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+                <TextView
+                    android:id="@+id/textView65"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/soraregular"
+                    android:text="Student Coordinator"
+                    android:textColor="#19384D"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="@+id/view13"
+                    app:layout_constraintTop_toBottomOf="@+id/faccod" />
+
+                <EditText
+                    android:id="@+id/studentcord"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@android:color/transparent"
+                    android:drawableBottom="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView65" />
+
+                <View
+                    android:id="@+id/view14"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#19384D"
+                    app:layout_constraintBottom_toBottomOf="@+id/studentcord"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/studentcord" />
+
+                <TextView
+                    android:id="@+id/textView66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/soraregular"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="Description"
+                    android:textColor="#19384D"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view14" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:background="@drawable/scmdesc"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:padding="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView66" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/schedbutton"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/sorasemibold"
+                    android:text="Schedule"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

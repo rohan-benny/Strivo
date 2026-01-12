@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_6sdp"
+    android:layout_marginBottom="@dimen/_6sdp"
+    android:elevation="2dp"
+    android:padding="@dimen/_6sdp">
+
+    <!-- Blue header for month -->
+    <TextView
+        android:id="@+id/monthTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="January"
+        android:fontFamily="@font/soraregular"
+        android:textSize="@dimen/_11ssp"
+        android:background="@drawable/monthboc"  android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingLeft="@dimen/_10sdp"/>
+
+    <!-- Container for events -->
+    <LinearLayout
+        android:id="@+id/eventsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_2sdp"/>
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grbg"
+    tools:context=".more_fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_230sdp"
+        android:background="@drawable/morebg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/morepiconst"
+            android:layout_width="@dimen/_64sdp"
+            android:layout_height="@dimen/_64sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:background="@drawable/morepicbg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/morecard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                app:cardCornerRadius="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/morepropic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/propic" />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/moreproname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/sorasemibold"
+            android:text="Rohan Benny"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/morepiconst"
+            app:layout_constraintTop_toTopOf="@+id/morepiconst" />
+
+        <TextView
+            android:id="@+id/morehod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/soraregular"
+            android:text="HOD, Computer Science"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/moreproname"
+            app:layout_constraintTop_toBottomOf="@+id/moreproname" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/myprofilebtn"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:text="My Profile"
+        android:fontFamily="@font/soraregular"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/_13ssp"
+        android:drawableLeft="@drawable/moremyprof"
+        android:drawablePadding="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_14sdp"
+        android:background="@drawable/morebtns"
+        android:layout_marginTop="@dimen/_45sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/changepsswdbtn"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:text="Change Password"
+        android:fontFamily="@font/soraregular"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/_13ssp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:drawableLeft="@drawable/changepasswd"
+        android:drawablePadding="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_14sdp"
+        android:background="@drawable/morebtns"
+        app:layout_constraintEnd_toEndOf="@+id/myprofilebtn"
+        app:layout_constraintStart_toStartOf="@+id/myprofilebtn"
+        app:layout_constraintTop_toBottomOf="@+id/myprofilebtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/privacybtn"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:text="Privacy Policy"
+        android:fontFamily="@font/soraregular"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/_13ssp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:drawableLeft="@drawable/privacy"
+        android:drawablePadding="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_14sdp"
+        android:background="@drawable/morebtns"
+        app:layout_constraintEnd_toEndOf="@+id/changepsswdbtn"
+        app:layout_constraintStart_toStartOf="@+id/changepsswdbtn"
+        app:layout_constraintTop_toBottomOf="@+id/changepsswdbtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logoutbtn"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:text="Log Out"
+        android:fontFamily="@font/soraregular"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/_13ssp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:drawableLeft="@drawable/logout"
+        android:drawablePadding="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_14sdp"
+        android:background="@drawable/morebtns"
+        app:layout_constraintEnd_toEndOf="@+id/privacybtn"
+        app:layout_constraintStart_toStartOf="@+id/privacybtn"
+        app:layout_constraintTop_toBottomOf="@+id/privacybtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

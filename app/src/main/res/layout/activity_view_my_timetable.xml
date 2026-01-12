@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ViewMyTimetable">
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="@dimen/_14sdp"
+        android:layout_height="@dimen/_14sdp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/_46sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bckarrow" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:fontFamily="@font/soraregular"
+        android:text="My TimeTable"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+        app:layout_constraintStart_toEndOf="@+id/imageView22"
+        app:layout_constraintTop_toTopOf="@+id/imageView22" />
+
+    <HorizontalScrollView
+        android:id="@+id/hoirz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginLeft="@dimen/_14sdp"
+        android:layout_marginRight="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView46">
+
+        <LinearLayout
+            android:id="@+id/daysLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Days Buttons -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnMonday"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:background="@drawable/day_button_selector"
+                android:fontFamily="@font/soraregular"
+                android:textSize="@dimen/_9ssp"
+                android:textColor="@color/black"
+                android:text="Monday" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTuesday"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:fontFamily="@font/soraregular"
+                android:textSize="@dimen/_9ssp"
+                android:textColor="@color/black"
+                android:background="@drawable/day_button_selector"
+                android:text="Tuesday" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnWednesday"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:fontFamily="@font/soraregular"
+                android:textSize="@dimen/_9ssp"
+                android:textColor="@color/black"
+                android:background="@drawable/day_button_selector"
+                android:text="Wednesday" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnThursday"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:fontFamily="@font/soraregular"
+                android:textSize="@dimen/_9ssp"
+                android:textColor="@color/black"
+                android:background="@drawable/day_button_selector"
+                android:text="Thursday" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFriday"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:fontFamily="@font/soraregular"
+                android:textSize="@dimen/_9ssp"
+                android:textColor="@color/black"
+                android:background="@drawable/day_button_selector"
+                android:text="Friday" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSaturday"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:fontFamily="@font/soraregular"
+                android:textSize="@dimen/_9ssp"
+                android:textColor="@color/black"
+                android:background="@drawable/day_button_selector"
+                android:text="Saturday" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#19384D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hoirz"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hoirz">
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/soraregular"
+            android:text="9:00\nAM"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/firsthour"
+            android:layout_width="@dimen/_235sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/brect"
+            app:layout_constraintBottom_toBottomOf="@+id/textView47"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView47">
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/tim" />
+
+            <TextView
+                android:id="@+id/firstsub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/soraregular"
+                android:text="Subject 1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintStart_toEndOf="@+id/imageView25"
+                app:layout_constraintTop_toTopOf="@+id/imageView25" />
+
+            <TextView
+                android:id="@+id/firstroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:text="205"
+                android:fontFamily="@font/soraregular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/firstsub"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/firstsub" />
+
+            <TextView
+                android:id="@+id/firstclassname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="II MCA B"
+                android:textColor="@color/white"
+                android:fontFamily="@font/soralight"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView25"
+                app:layout_constraintStart_toStartOf="@+id/firstsub"
+                app:layout_constraintTop_toBottomOf="@+id/firstsub" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:fontFamily="@font/soraregular"
+            android:text="10:00\nAM"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/secondhr"
+            android:layout_width="@dimen/_235sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/yrect"
+            app:layout_constraintBottom_toBottomOf="@+id/textView48"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView48">
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/tim" />
+
+            <TextView
+                android:id="@+id/secondsub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/soraregular"
+                android:text="Subject 1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintStart_toEndOf="@+id/imageView26"
+                app:layout_constraintTop_toTopOf="@+id/imageView26" />
+
+            <TextView
+                android:id="@+id/secondroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:text="205"
+                android:fontFamily="@font/soraregular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/secondsub"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/secondsub" />
+
+            <TextView
+                android:id="@+id/secondclassname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="II MCA B"
+                android:textColor="@color/white"
+                android:fontFamily="@font/soralight"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView26"
+                app:layout_constraintStart_toStartOf="@+id/secondsub"
+                app:layout_constraintTop_toBottomOf="@+id/secondsub" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:fontFamily="@font/soraregular"
+            android:text="11:00\nAM"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/thirdhr"
+            android:layout_width="@dimen/_235sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/pinkrect"
+            app:layout_constraintBottom_toBottomOf="@+id/textView49"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView49">
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/tim" />
+
+            <TextView
+                android:id="@+id/thirdsub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/soraregular"
+                android:text="Subject 1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintStart_toEndOf="@+id/imageView27"
+                app:layout_constraintTop_toTopOf="@+id/imageView27" />
+
+            <TextView
+                android:id="@+id/thirdroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:text="205"
+                android:fontFamily="@font/soraregular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/thirdsub"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/thirdsub" />
+
+            <TextView
+                android:id="@+id/thirdclassname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="II MCA B"
+                android:textColor="@color/white"
+                android:fontFamily="@font/soralight"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView27"
+                app:layout_constraintStart_toStartOf="@+id/thirdsub"
+                app:layout_constraintTop_toBottomOf="@+id/thirdsub" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:fontFamily="@font/soraregular"
+            android:text="12:00\nPM"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/fourthhr"
+            android:layout_width="@dimen/_235sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/greenrect__1_"
+            app:layout_constraintBottom_toBottomOf="@+id/textView50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView50">
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/tim" />
+
+            <TextView
+                android:id="@+id/fourthsub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/soraregular"
+                android:text="Subject 1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintStart_toEndOf="@+id/imageView28"
+                app:layout_constraintTop_toTopOf="@+id/imageView28" />
+
+            <TextView
+                android:id="@+id/fourthroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:text="205"
+                android:fontFamily="@font/soraregular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/fourthsub"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/fourthsub" />
+
+            <TextView
+                android:id="@+id/fourthclassname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="II MCA B"
+                android:textColor="@color/white"
+                android:fontFamily="@font/soralight"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView28"
+                app:layout_constraintStart_toStartOf="@+id/fourthsub"
+                app:layout_constraintTop_toBottomOf="@+id/fourthsub" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:fontFamily="@font/soraregular"
+            android:text="1:40\nPM"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fifthhr"
+            android:layout_width="@dimen/_235sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/greyrect"
+            app:layout_constraintBottom_toBottomOf="@+id/textView51"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView51">
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/tim" />
+
+            <TextView
+                android:id="@+id/fifthsub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/soraregular"
+                android:text="Subject 1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintStart_toEndOf="@+id/imageView29"
+                app:layout_constraintTop_toTopOf="@+id/imageView29" />
+
+            <TextView
+                android:id="@+id/fifthroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:text="205"
+                android:fontFamily="@font/soraregular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/fifthsub"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/fifthsub" />
+
+            <TextView
+                android:id="@+id/fifthclassname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="II MCA B"
+                android:textColor="@color/white"
+                android:fontFamily="@font/soralight"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+                app:layout_constraintStart_toStartOf="@+id/fifthsub"
+                app:layout_constraintTop_toBottomOf="@+id/fifthsub" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/soraregular"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:text="2:40\nPM"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/sixthhr"
+            android:layout_width="@dimen/_235sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/skybluerect"
+            app:layout_constraintBottom_toBottomOf="@+id/textView52"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView52">
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/tim" />
+
+            <TextView
+                android:id="@+id/sixthsub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/soraregular"
+                android:text="Subject 1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintStart_toEndOf="@+id/imageView30"
+                app:layout_constraintTop_toTopOf="@+id/imageView30" />
+
+            <TextView
+                android:id="@+id/sixthroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:text="205"
+                android:fontFamily="@font/soraregular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/sixthsub"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/sixthsub" />
+
+            <TextView
+                android:id="@+id/sixthclassname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="II MCA B"
+                android:textColor="@color/white"
+                android:fontFamily="@font/soralight"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView30"
+                app:layout_constraintStart_toStartOf="@+id/sixthsub"
+                app:layout_constraintTop_toBottomOf="@+id/sixthsub" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/soraregular"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:text="3:40\nPM"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/seventhhr"
+            android:layout_width="@dimen/_235sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/peechrect"
+            app:layout_constraintBottom_toBottomOf="@+id/textView53"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView53">
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/tim" />
+
+            <TextView
+                android:id="@+id/seventhsub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/soraregular"
+                android:text="Subject 1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintStart_toEndOf="@+id/imageView31"
+                app:layout_constraintTop_toTopOf="@+id/imageView31" />
+
+            <TextView
+                android:id="@+id/seventhroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:text="205"
+                android:fontFamily="@font/soraregular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/seventhsub"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seventhsub" />
+
+            <TextView
+                android:id="@+id/seventhclassname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="II MCA B"
+                android:textColor="@color/white"
+                android:fontFamily="@font/soralight"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView31"
+                app:layout_constraintStart_toStartOf="@+id/seventhsub"
+                app:layout_constraintTop_toBottomOf="@+id/seventhsub" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

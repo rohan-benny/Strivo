@@ -1,0 +1,31 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected State -->
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/transparent"/>
+                </shape>
+            </item>
+
+            <!-- Blue underline with some bottom margin -->
+            <item
+                android:bottom="9dp"
+                android:left="30dp"
+                android:right="30dp"
+                android:height="2dp"
+                android:gravity="bottom">
+                <shape android:shape="rectangle">
+                    <solid android:color="#3585BB" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Default State -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+</selector>

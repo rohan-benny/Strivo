@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grbg"
+    tools:context=".student_fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_94sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:fontFamily="@font/sorasemibold"
+            android:text="Students"
+            android:textColor="@color/mainclr"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:elevation="5dp"
+        android:src="@drawable/hodstbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/soraregular"
+        android:text="Select Year"
+        android:textColor="@color/mainclr"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@color/grbg"
+        android:fontFamily="@font/soraregular"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="#888888"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@drawable/dropbg"
+            android:inputType="none"
+            android:textColorHint="@color/grbg"
+            android:textSize="@dimen/_12ssp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mcaabutton"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/longwhbtn"
+        android:fontFamily="@font/soraregular"
+        android:paddingLeft="@dimen/_15sdp"
+        android:text="MCA A"
+        android:drawableLeft="@drawable/orangecls"
+        android:drawablePadding="@dimen/_8sdp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mcabbutton2"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/longwhbtn"
+        android:fontFamily="@font/soraregular"
+        android:paddingLeft="@dimen/_15sdp"
+        android:text="MCA B"
+        android:drawableLeft="@drawable/greencls"
+        android:drawablePadding="@dimen/_8sdp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@+id/mcaabutton"
+        app:layout_constraintStart_toStartOf="@+id/mcaabutton"
+        app:layout_constraintTop_toBottomOf="@+id/mcaabutton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mcacbutton4"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/longwhbtn"
+        android:fontFamily="@font/soraregular"
+        android:paddingLeft="@dimen/_15sdp"
+        android:text="MCA C"
+        android:drawableLeft="@drawable/violetcls"
+        android:drawablePadding="@dimen/_8sdp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@+id/mcabbutton2"
+        app:layout_constraintStart_toStartOf="@+id/mcabbutton2"
+        app:layout_constraintTop_toBottomOf="@+id/mcabbutton2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mcadbutton6"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/longwhbtn"
+        android:fontFamily="@font/soraregular"
+        android:paddingLeft="@dimen/_15sdp"
+        android:text="MCA D"
+        android:drawableLeft="@drawable/yellowcls"
+        android:drawablePadding="@dimen/_8sdp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@+id/mcacbutton4"
+        app:layout_constraintStart_toStartOf="@+id/mcacbutton4"
+        app:layout_constraintTop_toBottomOf="@+id/mcacbutton4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/msccsbutton8"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/longwhbtn"
+        android:fontFamily="@font/soraregular"
+        android:paddingLeft="@dimen/_15sdp"
+        android:text="Msc Cs"
+        android:drawableLeft="@drawable/redcls"
+        android:drawablePadding="@dimen/_8sdp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@+id/mcadbutton6"
+        app:layout_constraintStart_toStartOf="@+id/mcadbutton6"
+        app:layout_constraintTop_toBottomOf="@+id/mcadbutton6" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mscdsbutton9"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/longwhbtn"
+        android:fontFamily="@font/soraregular"
+        android:paddingLeft="@dimen/_15sdp"
+        android:text="Msc Ds"
+        android:drawableLeft="@drawable/bluecls"
+        android:drawablePadding="@dimen/_8sdp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@+id/msccsbutton8"
+        app:layout_constraintStart_toStartOf="@+id/msccsbutton8"
+        app:layout_constraintTop_toBottomOf="@+id/msccsbutton8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

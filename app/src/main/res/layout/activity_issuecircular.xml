@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Issuecircular">
+
+    <ImageView
+        android:id="@+id/issuebck"
+        android:layout_width="@dimen/_14sdp"
+        android:layout_height="@dimen/_14sdp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/_46sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bckarrow" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:fontFamily="@font/soraregular"
+        android:text="Issue Circular"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/issuebck"
+        app:layout_constraintStart_toEndOf="@+id/issuebck"
+        app:layout_constraintTop_toTopOf="@+id/issuebck" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView38"
+        app:srcCompat="@drawable/issuecbck" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:fontFamily="@font/soraregular"
+        android:text="Title"
+        android:textColor="#19384D"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+    <EditText
+        android:id="@+id/circtitle"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@color/black"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintStart_toStartOf="@+id/textView43"
+        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#19384D"
+        app:layout_constraintBottom_toBottomOf="@+id/circtitle"
+        app:layout_constraintEnd_toEndOf="@+id/circtitle"
+        app:layout_constraintStart_toStartOf="@+id/circtitle" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:fontFamily="@font/soraregular"
+        android:text="Date"
+        android:textColor="#19384D"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@+id/view6"
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+    <EditText
+        android:id="@+id/circdate"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@color/black"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@+id/view6"
+        app:layout_constraintStart_toStartOf="@+id/textView44"
+        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#19384D"
+        app:layout_constraintBottom_toBottomOf="@+id/circdate"
+        app:layout_constraintEnd_toEndOf="@+id/circdate"
+        app:layout_constraintStart_toStartOf="@+id/circdate" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:fontFamily="@font/soraregular"
+        android:text="Description"
+        android:textColor="#19384D"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+    <ImageView
+        android:id="@+id/issuecircdatepick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/view7"
+        app:layout_constraintEnd_toEndOf="@+id/circdate"
+        app:layout_constraintTop_toTopOf="@+id/circdate"
+        app:srcCompat="@drawable/datepicker" />
+
+    <EditText
+        android:id="@+id/issuecircdesc"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@drawable/scmdesc"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintStart_toStartOf="@+id/textView45"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/issuebtn"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/sorasemibold"
+        android:text="Schedule"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/issuecircdesc" />
+</androidx.constraintlayout.widget.ConstraintLayout>

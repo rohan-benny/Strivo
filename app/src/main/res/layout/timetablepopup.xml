@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_260sdp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/timetablepopup">
+
+    <TextView
+        android:id="@+id/dayname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/sorabold"
+        android:text="Monday"
+        android:textColor="#19384D"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="@+id/textView70"
+        app:layout_constraintTop_toBottomOf="@+id/dayname"
+        app:srcCompat="@drawable/mclock" />
+
+    <TextView
+        android:id="@+id/tabletime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:fontFamily="@font/soraregular"
+        android:text="9:00 AM"
+        android:textColor="#19384D"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView39"
+        app:layout_constraintStart_toEndOf="@+id/imageView39"
+        app:layout_constraintTop_toTopOf="@+id/imageView39" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/soraregular"
+        android:text="Subject"
+        android:textColor="#19384D"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintStart_toStartOf="@+id/subject"
+        app:layout_constraintTop_toBottomOf="@+id/imageView39" />
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/timetext"
+        android:ems="10"
+        android:paddingLeft="@dimen/_8sdp"
+        android:fontFamily="@font/soraregular"
+        android:inputType="text"
+        android:textColor="#19384D"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/soraregular"
+        android:text="Class"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="#19384D"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintStart_toStartOf="@+id/timeyeartextInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/timeyeartextInputLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/timetextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:fontFamily="@font/soraregular"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="#888888"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@+id/subject"
+        app:layout_constraintStart_toStartOf="@+id/textView71"
+        app:layout_constraintTop_toBottomOf="@+id/textView71">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocompletetime"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/timetext"
+            android:inputType="none"
+            android:paddingLeft="@dimen/_5sdp"
+            android:fontFamily="@font/soraregular"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="#19384D"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/timetext"
+        android:ems="10"
+        android:paddingLeft="@dimen/_8sdp"
+        android:fontFamily="@font/soraregular"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="#19384D"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/timetextInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/textView72"
+        app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/soraregular"
+        android:text="Room No"
+        android:textColor="#19384D"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintStart_toStartOf="@+id/timetextInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/timetextInputLayout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tsavebtn"
+        android:layout_width="@dimen/_68sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginBottom="@dimen/_14sdp"
+        android:background="@drawable/tsavebtn"
+        android:fontFamily="@font/sorasemibold"
+        android:text="Save"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tcancelbtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tcancelbtn"
+        android:layout_width="@dimen/_68sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_14sdp"
+        android:background="@drawable/tcancelbtn"
+        android:fontFamily="@font/sorasemibold"
+        android:text="Cancel"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tsavebtn"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/soraregular"
+        android:text="Semester"
+        android:textColor="#19384D"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintStart_toStartOf="@+id/subject"
+        app:layout_constraintTop_toBottomOf="@+id/subject" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/timeyeartextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:fontFamily="@font/soraregular"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="#888888"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@+id/subject"
+        app:layout_constraintStart_toStartOf="@+id/textView73"
+        app:layout_constraintTop_toBottomOf="@+id/textView73">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocompletetimeyear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/timetext"
+            android:inputType="none"
+            android:paddingLeft="@dimen/_5sdp"
+            android:fontFamily="@font/soraregular"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="#19384D"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
